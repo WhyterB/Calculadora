@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Progressão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Progressão</h1>
+        <div class="calc-container">
+            <label for="tipo">Escolha o tipo de progressão:</label>
+            <select id="tipo">
+                <option value="pa">Progressão Aritmética (PA)</option>
+                <option value="pg">Progressão Geométrica (PG)</option>
+            </select>
+            <div id="inputs">
+                <div>
+                    <label for="a1">Primeiro termo (a1):</label>
+                    <input type="number" id="a1">
+                </div>
+                <div>
+                    <label for="n">Posição do termo (n):</label>
+                    <input type="number" id="n">
+                </div>
+                <div>
+                    <label for="r">Razão (r/q):</label>
+                    <input type="number" id="r">
+                </div>
+            </div>
+            <button onclick="calcular()">Calcular</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
